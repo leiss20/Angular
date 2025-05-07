@@ -3,13 +3,13 @@ import { AnimalService } from '../../services/animal.service';
 import { ToastrService } from 'ngx-toastr';
 import { take } from 'rxjs';
 import { Router } from '@angular/router';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 
 
 @Component({
   selector: 'app-animal',
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './animal.component.html',
   styleUrl: './animal.component.css'
 })
