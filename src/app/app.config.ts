@@ -12,7 +12,9 @@ export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }),
   provideRouter(routes),
   provideHttpClient(),
-  importProvidersFrom(BrowserModule,ToastrModule,forRoot()),]
+  importProvidersFrom(BrowserModule, ToastrModule.forRoot()),
+
+]
 };
 
 
